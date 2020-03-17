@@ -1,0 +1,42 @@
+
+
+@import "extra/normalize.css";
+@import "extra/burger.css";
+/*all for header*/
+@import "block/button.css";
+@import "block/ configuration.css";
+@import "block/information.css";
+@import "block/menu.css";
+@import "block/header.css";
+/*catalog*/
+@import "block/card.css";
+@import "block/catalog.css";
+/*footer*/
+@import "block/footer.css";
+/*modal windows*/
+@import "block/modal.css";
+@import "block/laypout.css";
+/*adaptive*/
+@import "extra/media.css";
+
+/*common rules*/
+.container{
+
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.flexBox{
+    display: flex;
+    justify-content: space-around;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.invisible{
+    position: absolute;
+    left: -1000%;
+}
+button{
+    cursor: pointer;
+}

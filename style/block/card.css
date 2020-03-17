@@ -1,0 +1,114 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    list-style: none;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+.card__item{
+    background: #ffffff;
+    padding-bottom: 3rem;
+    width: 55.5rem;
+    height: 62.8rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.card__item:last-child{
+    margin-bottom: 0;
+}
+.card__image{
+    display: block;
+    width: 100%;
+    height: 43.7rem;
+    margin-bottom: 1.3rem;
+    background: aliceblue;
+}
+.card__image>*{
+    height: inherit;
+    width: 100%;
+    max-width: 100%;
+}
+.card__img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: inherit;
+}
+.card__text{
+    padding-left: 3.7rem;
+    /*margin-bottom: 1.2rem;*/
+    min-height: 10rem;
+}
+.card__btn{
+    border: none;
+    line-height: 1;
+    background: rgba(0,0,0,0);
+    padding: 0.7rem 0;
+    text-align: left;
+}
+.card__name{
+    position: relative;
+    color: #00a2dd;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+}
+.card__name:after{
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    display: block;
+    width: 5px;
+    height: 8px;
+    background: url("../../icons/elem.svg") center center/cover no-repeat;
+
+}
+.card__description{
+    color: #0d3351;
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}
+.card__price{
+    color: #0d3351;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-left: 3.8rem;
+}
+.card__price-old{
+    opacity: 0.55;
+    color: #0d3351;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    letter-spacing: 0.9px;
+    margin-left: 3.9rem;
+}
+.card__mark{
+    position: absolute;
+    top: -7px;
+    right: 32px;
+    display: block;
+    width: 90px;
+    height: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+
+}
+.card__mark-red{
+    background: url("../../icons/redFlag.png") center center/ contain no-repeat;
+}
+.card__mark-blue{
+    background: url("../../icons/blueFlag.png") center center/ contain no-repeat;
+}

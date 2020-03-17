@@ -1,0 +1,34 @@
+.configuration{
+    display: inline-block;
+}
+.configuration__list{
+    display: flex;
+
+}
+.configuration__item{
+    list-style: none;
+    margin-right: 50px;
+    position: relative;
+}
+.configuration__item:after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    display: block;
+    background: url("../../icons/tria.png") center center/ cover no-repeat;
+    top: 50%;
+    right: -13px;
+    transform: translateY(-50%);
+}
+.configuration__item-img{
+    display: inline-block;
+    margin-right: 0.8rem;
+    max-width: 100%;
+    width: 10px;
+    height: 12px;
+}
+.configuration__item-text{
+    display: inline-block;
+    font-size: 1.4rem;
+}

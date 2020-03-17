@@ -1,0 +1,19 @@
+.information{
+    display: inline-block;
+}
+.information__tel{
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+    color: #0d3351;
+}
+.information__description{
+    color: #0d3351;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.information__main{
+    font-size: 1.4rem;
+}

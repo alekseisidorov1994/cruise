@@ -1,0 +1,56 @@
+.header{
+    position: relative;
+    padding: 3.5rem 0 19.6rem 0;
+    background: url("../../images/main.jpg") center center/ cover no-repeat;
+
+}
+.header:after{
+    content: '';
+    background: url("../../icons/wave.png") center center/ contain no-repeat;
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 40%);
+    z-index: 1;
+}
+.header__above{
+    display: flex;
+    justify-content: space-between;
+}
+.header__burger{
+    display: inline-block;
+}
+.header__configuration{
+    margin-left: auto;
+}
+.header__logo{
+    display: block;
+    width: 8.8rem;
+    height: 8.8rem;
+    margin: 0 auto 1.6rem auto;
+}
+.header__img{
+    max-width: 100%;
+}
+.header__title{
+    text-align: center;
+    color: #0d3351;
+    font-size: 3.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 4.7rem;
+
+}
+.header__title-strong{
+    display: block;
+    font-size: 10rem;
+    line-height: 11rem;
+    text-transform: uppercase;
+}
+.header__btn{
+    margin: 0 auto;
+}

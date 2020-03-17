@@ -1,0 +1,33 @@
+.burger{
+    display: block;
+    width: 22px;
+    height: 16px;
+    position: relative;
+    background: none;
+    border: none;
+}
+.burger__content{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: black;
+
+}
+.burger__content:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 2px;
+    top: 0;
+}
+.burger__content:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+}

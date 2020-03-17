@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500i,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Document</title>
+</head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__above">
+                    <button class="header__burger burger" aria-label="меню">
+                        <span class="burger__content"></span>
+                    </button>
+                    <nav class="menu__nav" style="display: none">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Популярные маршруты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Расписание рейсов</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Забронированные рейсы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Вход для партнеров</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">О компании</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class=" header__configuration configuration">
+                        <ul class="configuration__list">
+                            <li class="configuration__item">
+                                <img  class="configuration__item-img" src="./icons/user.svg" alt="иконка личного кабинета">
+                                <p  class="configuration__item-text">Личный кабинет</p>
+                            </li>
+                            <li class="configuration__item">
+                                <img  class="configuration__item-img" src="./icons/money.svg" alt="Выбор валюты">
+                                <p  class="configuration__item-text">Рубль</p>
+                            </li>
+                            <li class="configuration__item">
+                                <p  class="configuration__item-text">Ru</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="information header__information" >
+                        <a class="information__tel" href="tel:88005006105">
+                            <span  aria-label="телефон поддержки"></span>
+                            8 800 500-61-05 </a>
+                        <p class="information__description">Круглосуточная поддержка</p>
+                    </div>
+                </div>
+                <div class="header__logo">
+                    <img src="./icons/logo.png" alt="Логотип компании" class="header__img">
+                </div>
+                <h1 class="header__title">
+                    Морские прогулки
+                    <span class="header__title-strong">
+                        по чёрному морю
+                    </span>
+                </h1>
+                <a href="#catalog" class="btn header__btn">
+                    Выбрать круиз
+                </a>
+            </div>
+        </header>
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <h2 class="catalog__title">
+                    Каталог круизов
+                </h2>
+                <label for="sort" class="invisible" >Здесь вы можете отсортировать список круизов</label>
+                <select class="catalog__select" name="sort" id="sort" title="sort of catalog">
+                    <option class="catalog__option" value="price">
+                        Сортировать круизы по цене
+                    </option>
+                </select>
+                <ul class="catalog__list card"></ul>
+                <template class="templateCard">
+                    <li class="catalog__elem card__item">
+                        <!-- card__mark-blue -->
+                        <span class="card__mark" data-bind="textNode" data-name="mark">Хит продаж</span>
+                        <picture class="card__image" aria-hidden="true" id="image">
+                            <source srcset="./images/desktop/1.jpg" media="(min-width: 1200px)" data-bind="srcset" data-name="picture_source">
+                            <img src="./images/tablet/1.jpg" alt="Берег анапы" data-bind="src" data-name="image">
+                        </picture>
+
+                        <div class="card__text">
+                                <button class="card__btn">
+                                    <strong class="card__name" data-bind="textNode" data-name="title_cruise">
+                                        Морской круиз в Анапу
+                                    </strong>
+                                    <span aria-label="Нажмите чтобы выбрать круиз"></span>
+                                </button>
+
+                            <div class="card__description">
+                                <b> Маршрут: </b> <p class="text" data-bind="textNode" data-name="travel">Сочи-Лазаревское-Геленджик-Анапа</p>
+                                <b>Продолжительность:</b> <p class="time" data-bind="textNode" data-name="time"> 10 ч. 0 мин.</p>
+                            </div>
+
+                        </div>
+
+                        <strong class="card__price"  title="price">
+                            <span aria-label="актуальная цена"></span>
+                            <span data-bind="textNode" data-name="price">49 000 руб.</span>
+                        </strong>
+                        <s class="card__price-old"  title="old price">
+                            <span aria-label="старая цена"></span>
+                            <span data-bind="textNode" data-name="oldPrice">15000 руб.</span>    
+                        </s>
+                    </li>
+                </template>
+                <button class="catalog__btn btn" aria-label="Нажмите чтобы показать больше круизов">
+                    Больше круизов
+                </button>
+
+            </div>
+
+        </section>
+        <footer class="footer">
+            <div class="container flexBox">
+                <ul class="footer-company">
+                        <li class="footer-company__list">
+                            <a href="#" class="footer-company__link">Вход для партнеров</a>
+                        </li>
+                        <li class="footer-company__list">
+                            <a href="#" class="footer-company__link">О компании</a>
+                        </li>
+                        <li class="footer-company__list">
+                            <a href="#" class="footer-company__link">Контакты</a>
+                        </li>
+                    </ul>
+                <div class="footer-social">
+                    <p class="footer-social__text">Будь на связи:</p>
+                    <ul class="footer-social__order">
+                        <li class="footer-social__list">
+                            <a href="" class="footer-social__link" aria-label="Социальная сеть Вконтакте">
+                                <img src="./icons/social/vk.png" alt="" class="footer__social-img">
+                            </a>
+                        </li>
+                        <li class="footer-social__list">
+                            <a href="" class="footer-social__link"  aria-label="Социальная сеть Одноклассники">
+                            <img src="./icons/social/ok.png" alt="" class="footer__social-img">
+                            </a>
+                        </li>
+                        <li class="footer-social__list">
+                            <a href="" class="footer-social__link"  aria-label="Ютуб">
+                                <img src="./icons/social/yt.png" alt="" class="footer__social-img">
+                            </a>
+                        </li>
+                        <li class="footer-social__list">
+                            <a href="" class="footer-social__link"  aria-label="Социальная сеть Инстаграмм">
+                                <img src="./icons/social/insta.png" alt="" class="footer__social-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__information information">
+                    <a class="footer__tel information__tel" href="tel:88005006105">
+                        <span  aria-label="телефон поддержки"></span>
+                        8 800 500-61-05
+                    </a>
+                    <p class="footer__descr information__description">Круглосуточная поддержка</p>
+                    <small class="information__main">© 2016 OOO «Городские Круизы»</small>
+                </div>
+            </div>
+        </footer>
+        <div class="layout"  style="display: none">
+            <div class="layout__modal modal">
+
+            </div>
+        </div>
+        <script src="./myScript.js"></script>
+    </body>
+</html>

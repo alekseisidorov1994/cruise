@@ -1,0 +1,142 @@
+@media (min-width: 1201px) {
+    html, body{
+        font-size: 10px;
+    }
+    .container {
+        max-width: 1170px;
+    }
+    .card__item:nth-child(2),
+    .card__item:nth-child(3){
+        height: 30.4rem;
+        margin-bottom: 0;
+
+    }
+    .card__item:nth-child(2) .card__image,
+    .card__item:nth-child(3) .card__image{
+        height: 11.3rem;
+    }
+    .card__item:nth-child(3){
+        position: absolute;
+        right: 0;
+        transform: translateY(106%);
+    }
+
+}
+
+@media (max-width: 1200px) {
+    html, body{
+        font-size: 10px;
+    }
+    .container {
+        max-width: 970px;
+    }
+    .card__item{
+        width: calc(50% - 2rem);
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .card__item:last-child{
+        display: none;
+    }
+    .card__image{
+        height: 27rem;
+    }
+    .header__title{
+        font-size: 2.6rem;
+    }
+    .header__title-strong{
+        font-size: 7.2rem;
+    }
+    .catalog__title{
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .container{
+        max-width: 750px;
+    }
+    .card__price-old{
+        margin-left: 3%;
+    }
+    .card__name:after{
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+    .header__title-strong{
+        font-size: 6.2rem;
+    }
+}
+@media (max-width: 678px) {
+    .container {
+        max-width: 320px;
+    }
+    .header:after{
+        width: 4.5rem;
+        height: 23.8rem;
+        transform: translate(-50%, 20%);
+
+    }
+    .header__title{
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 4.3rem;
+    }
+    .header__title-strong{
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    .catalog{
+        padding: 5.5rem 0 3.1rem 0;
+    }
+    .catalog__title{
+        font-size: 2rem;
+    }
+    .catalog__select{
+        margin-bottom: 3rem;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card__image{
+        height: 22.8rem;
+    }
+    .header__configuration{
+      display: none;
+    }
+    .header__information{
+        position: absolute;
+        left: -1000%
+    }
+
+    .card__item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .card__description, .card__price, .card__btn{
+        margin-left: 2rem;
+    }
+    .card__price-old{
+        margin-left: 1%;
+    }
+    .flexBox{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer__social{
+        margin-bottom: 2rem;
+    }
+    .footer__company{
+        display: none;
+    }
+    .footer__social-order{
+        justify-content: center;
+    }
+
+
+}
